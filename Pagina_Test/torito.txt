@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Modelo RA</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+      body { margin: 0; }
+      model-viewer {
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <model-viewer
+      src="modelo.glb"
+      ios-src="modelo.usdz"
+      ar
+      ar-modes="scene-viewer quick-look webxr"
+      camera-controls
+      auto-rotate
+      alt="Un modelo 3D en RA">
+    </model-viewer>
+  </body>
+</html>
